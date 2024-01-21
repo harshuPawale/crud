@@ -82,7 +82,7 @@ class Crud extends CI_Controller {
 		if($this->form_validation->run() == false)
 		{
 			$data_error = [
-				'error' => validation_errors()
+				'error' => validation_error()
 			];
 
 			$this->session->set_flashdata($data_error);
@@ -118,7 +118,7 @@ class Crud extends CI_Controller {
         $this->load->view('student_detilview.php',$data);
        }
 
-       redirect('crud');
+    //    redirect('crud');
     }
 }
 ?>

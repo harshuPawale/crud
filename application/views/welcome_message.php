@@ -11,22 +11,22 @@
 				<div class="">
 					<form action="<?php echo base_url();?>Crud/studentDetail" method="post">
 					<div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
-						<input type="text" name="name" placeholder="Enter Full Name" />
+						<input type="text" name="name" placeholder="Enter Full Name" required/>
 					</div>
 					<div class="input_field"> <span><i aria-hidden="true" class="fa fa-university"></i></span>
-						<input type="text" name="collage_name" placeholder="Enter Collage Name"  />
+						<input type="text" name="collage_name" placeholder="Enter Collage Name"  required/>
 					</div>
 					<div class="input_field"> <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
-						<input type="email" name="email" placeholder="Enter Email"  />
+						<input type="email" name="email" placeholder="Enter Email"  required/>
 					</div>
 					<div class="input_field"> <span><i aria-hidden="true" class="fa fa-lock"></i></span>
-						<input type="password" name="password" placeholder="Enter Password"  />
+						<input type="password" name="password" placeholder="Enter Password"  required/>
 					</div>
 					<div class="input_field"> <span><i aria-hidden="true" class="fa fa-phone"></i></span>
-						<input type="text" name="phone_num" pattern="[1-9]{1}[0-9]{9}" maxlength="10" minlength="10" placeholder="Enter Phone Number"  />
+						<input type="text" name="phone_num" pattern="[1-9]{1}[0-9]{9}" maxlength="10" minlength="10" placeholder="Enter Phone Number"  required/>
 					</div>
 					<div class="input_field"> <span><i aria-hidden="true" class="fa fa-map-marker"></i></span>
-						<input type="text" name="adress" placeholder="Enter Address"  />
+						<input type="text" name="adress" placeholder="Enter Address"  required/>
 					</div>
 					
 					
@@ -38,7 +38,7 @@
 						</div>
 					
 						<div class="input_field checkbox_option">
-							<input type="checkbox" id="cb1">
+							<input type="checkbox" id="cb1" required>
 							<label for="cb1">I agree with terms and conditions</label>
 						</div>
 						
